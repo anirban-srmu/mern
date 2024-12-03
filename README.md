@@ -1,6 +1,8 @@
 ```
 npm init -y
 npm install express cors body-parser
+npm mongoose
+npm dotenv
 ```
 
 ecommerce-backend/
