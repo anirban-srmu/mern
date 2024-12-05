@@ -3,7 +3,7 @@ import axios from "axios";
 import ProductCard from "./ProductCard";
 
 const ProductList = () =>{
-    const [product,setProducts] = userState([]);
+    const [products,setProducts] = useState([]);
 
     useEffect(()=>{
         const fetchProducts = async () =>{
@@ -11,7 +11,7 @@ const ProductList = () =>{
                 const response = await axios.get("http://localhost:500/api/products");
                 setProducts(response.data);
             }catch (error){
-                console.error("Error fetching product: ",erorr);
+                console.error("Error fetching product: ",error);
             }
         };
         fetchProducts();
@@ -19,9 +19,8 @@ const ProductList = () =>{
 
     return(
         <div className="product-list">
-        {product.map((product)=>(
+        {products.map((product)=>(
             <ProductCard key={product._id} product={product}/>
-
         ))}
         </div>
     );
