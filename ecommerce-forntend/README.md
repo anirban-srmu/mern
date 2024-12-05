@@ -3,6 +3,23 @@ npx create-react-app ecommerce-frontend
 cd ecommerce-frontend
 ```
 
+# Code structure
+
+ecommerce-frontend
+|---public/<br>
+|---src/<br>
+|---|---components/<br>
+|---|---|---Header.js<br>
+|---|---|---ProductList.js<br>
+|---|---|---ProductCard.js<br>
+|---|---|---Login.js<br>
+|---|---|---Register.js<br>
+|---|---|---ProductDetail.js<br>
+|---|---context/<br>
+|---|---|---AuthContext.js<br>
+|---|---App.js<br>
+|---|---index.js<br>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
