@@ -1,6 +1,6 @@
 const express = require("express");
 const {registerUser, loginUser} = require("../controller/authController");
-const router = express.Router();
+const router = express.Router({mergeParams:true});
 
 router.post("/register", registerUser);
 router.post("/login",loginUser);
