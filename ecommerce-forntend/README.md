@@ -5,7 +5,7 @@ cd ecommerce-frontend
 
 # Code structure
 
-ecommerce-frontend
+ecommerce-frontend<br>
 |---public/<br>
 |---src/<br>
 |---|---components/<br>
