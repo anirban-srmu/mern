@@ -1,7 +1,7 @@
 const express = require("express");
 
 const{createProduct, getAllProducts,getProductById,updateProduct,deleteProduct} = require("../controller/productController");
-const router = express.Router();
+const router = express.Router({mergeParams:true});
 
 router.post("/create",createProduct);
 router.get("/",getAllProducts);
